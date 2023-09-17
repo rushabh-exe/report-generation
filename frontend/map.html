@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Map</title>
 </head>
 <style>
     *{
@@ -103,41 +103,14 @@
         color: #f06c04;
     }
     .content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         padding: 20px;
         height: 80vh;
+        overflow-y: scroll;
         margin: 10px;
         box-shadow: inset 0px 0px 2px grey;
         border-radius: 10px;
-    }
-    .card{
-        display: flex;
-        flex-direction: column;
-        padding: 5px;
-        margin: 5px;
-        border: 1px solid grey;
-        border-radius: 7px;
-        height: 25em;
-        transition: 0.5s ease;
-        gap: .2em;
-    }
-    .card:hover{
-        scale: 1.02;
-        box-shadow: 0px 0px 10px grey;
-    }
-    .card h4{
-        text-align: center;
-        padding: 5px;
-        cursor: pointer;
-    }
-    .card p{
-        font-weight: 800;
-        padding: 5px;
-        text-align:start;
-        width: 100%;
-        cursor: pointer;
     }
     footer{
         background-color: black;
@@ -174,30 +147,7 @@
             </ul>
         </div>
         <div class="content">
-            <div class="card">
-                <h4>THE CARD</h4>
-                <p>drivername</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, numquam?</p>
-                <p>from Location to Location</p>
-                <p>time taken xhrs</p>
-                <p>Amount of coal</p>
-            </div>
-            <div class="card">
-                <h4>THE CARD</h4>
-                <p>drivername</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, numquam?</p>
-                <p>from Location to Location</p>
-                <p>time taken xhrs</p>
-                <p>Amount of coal</p>
-            </div>
-            <div class="card">
-                <h4>THE CARD</h4>
-                <p>drivername</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, numquam?</p>
-                <p>from Location to Location</p>
-                <p>time taken xhrs</p>
-                <p>Amount of coal</p>
-            </div>
+
         </div>
     </main>
     <footer>
