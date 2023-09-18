@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav-section-1{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(251, 251, 251);
+            box-shadow: inset 0px 0px 1px gray;
+            padding: 8px;
+        }
+        .nav-section-2{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 8px;
+        }
+        .nav-section-2 div:first-child{
+            display: flex;
+            align-items: center;
+            gap: 1em;
+        }
+        .nav-section-2 div:last-child{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .nav-section-2 div:first-child div{
+            display: flex;
+            flex-direction: column;
+        }
+        .nav-section-3{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 10em;
+            background-color: #ec4933;   
+        }
+        .nav-section-3 span{
+            color: white;
+            background-color: #ec4933;  
+            padding:12px;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+        .nav-section-3 span:hover{
+            background-color: #b7310c;  
+            box-shadow: inset 0px -4px white;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .section-1{
+            display: grid;
+            grid-template-columns: 60% 40%;
+            width: 80%;
+            gap: 5em;
+            padding: 2em;
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 1em;
+        }
+        .info h3{
+            word-spacing: 2px;
+            font-weight: 800;
+        }
+        .info p{
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            line-height: 2em;
+        }
+        .info button{
+            border: 2px solid #ec4933;
+            background-color: transparent;
+            padding: 10px;
+            font-size: 1em;
+            color: #ec4933;
+        }
+        .info button:hover{
+            background-color: #ec4933;
+            color: #ffffff;
+            transition: .2s ease;
+        }
+        .info button:active{
+            background-color: #ffffff;
+            color: #ec4933;
+        }
+        .profiles{
+            width: 80%;
+        }
+        .profile-card{
+            box-shadow: inset 0px 0px 2px gray;
+            padding: 2em;
+            display: flex;
+        }
+        .profile-card img{
+            width: 8em;
+            height: 8em;
+            background-color: gray;
+        }
+        .profile-info{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            justify-content: center;
+            align-items: start;
+            padding: 1em;
+        }
+        .profile-info button{
+            padding: .7em;
+            background: transparent;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-section-1">
+            <span>भारत सरकार</span>
+            <span>GOVERNMENT OF INDIA</span>
+            <button>Skip to Dashboard</button>
+        </div>
+        <div class="nav-section-2">
+            <div>
+                <img src="./assets/emblem-dark.png" alt="">
+                <div>
+                    <span>कोयला मंत्रालय</span>
+                    <span>MINISTRY OF COAL</span>
+                </div>
+            </div>
+            <div>
+                <img src="/assets/swach-bharat.png" alt="">
+                <img src="/assets/swach-bharat.png" alt="">
+                <img src="/assets/swach-bharat.png" alt="">
+                <img src="/assets/swach-bharat.png" alt="">
+                <img src="/assets/swach-bharat.png" alt="">
+            </div>
+        </div>
+        <div class="nav-section-3">
+            <span>Home </span>
+            <span>About us</span>
+            <span>Dashboard</span>
+            <span>Reports</span>
+            <span>Track</span>
+            <span>Contact us</span>
+        </div>
+    </nav>
+    <main>
+        <div class="section-1">
+            <div class="info">
+                <h3>WELCOME TO Ministry Of Coal</h3>
+                <p>Welcome to the website of Ministry of Coal, Government of India.</p>
+                <p>The Ministry of Coal has the overall responsibility of determining policies and strategies in respect of exploration and development of coal and lignite reserves, sanctioning of important projects of high value and for deciding all related issues. Under the administrative control of the Ministry, these key functions are exercised through the Public Sector Undertakings, namely, Coal India Ltd. and its subsidiaries and Neyveli Lignite corporation India Limited (NLCIL). Other than Coal India Ltd. and Neyveli Lignite Corporation India Ltd., the Ministry of Coal also has a joint venture with Government of Telangana called Singareni Collieries Company Limited. Government of Telangana holds 51% equity and Government of India holds 49 % equity.</p>
+                <button>Read More</button>
+            </div>
+            <div class="profiles">
+                <div class="profile-card">
+                    <img src="" alt="">
+                    <div class="profile-info">
+                        <h3>Rohan Mishra</h3>
+                        <p>Labour Minister</p>
+                        <button>View Portfolio</button>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="" alt="">
+                    <div class="profile-info">
+                        <h3>Rohan Mishra</h3>
+                        <p>Labour Minister</p>
+                        <button>View Portfolio</button>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="" alt="">
+                    <div class="profile-info">
+                        <h3>Rohan Mishra</h3>
+                        <p>Labour Minister</p>
+                        <button>View Portfolio</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
