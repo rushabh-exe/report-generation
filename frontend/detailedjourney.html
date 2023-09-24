@@ -1,0 +1,89 @@
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .content-section {
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+        gap: 1em;
+        padding-top: 2em;
+        background-color: rgb(215, 215, 215);
+    }
+
+    #map {
+        height: 130vh;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    td,
+    th {
+        border: 1px solid #9a9a9a;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #fbfbfb;
+    }
+    .details-m{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background-color: #ffffff;
+        padding: 10px;
+    }
+    .overview p{
+        padding: 7px 0;
+        font-weight: 900;
+        font-size: 1.3em;
+    }
+    .checkin p{
+        font-weight: 900;
+        padding: 5px 0;
+    }
+</style>
+<div class="content-section">
+    <div class="details-m">
+        <div class="overview">
+            <p>Driver: Rohan Mishra</p>
+            <p>Buyer: JSW Steel Plant</p>
+            <p>Coal Type: Sub-Bituminous</p>
+            <p>Capacity: 300MT</p>
+            <p>Start Date: sept 22 bla bla</p>
+            <p>Truck Status: Not Completed</p>
+        </div>
+        <div class="checkin">
+            <table>
+                <tr>
+                    <th>Location</th>
+                    <th>Check Point Status</th>
+                </tr>
+                <tr>
+                    <td>Mumbai</td>
+                    <td>Reached</td>
+                </tr>
+                <tr>
+                    <td>Mumbai</td>
+                    <td>Reached</td>
+                </tr>
+                <tr>
+                    <td>Mumbai</td>
+                    <td>Reached</td>
+                </tr>
+            </table>
+            <div>
+            <p>Capacity: 300MT</p>
+            <p>Start Date: sept 22 bla bla</p>
+            <p>Truck Status: Not Completed</p>
+            </div>
+        </div>
+    </div>
+    <div id="map"></div>
+</div>
