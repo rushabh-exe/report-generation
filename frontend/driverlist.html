@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .nav-section-1 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(251, 251, 251);
+            box-shadow: inset 0px 0px 1px gray;
+            padding: 8px;
+        }
+
+        .nav-section-1 button {
+            background-color: #ffffff;
+            padding: 2px;
+        }
+
+        .nav-section-2 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 8px;
+        }
+
+        .nav-section-2 div:first-child {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+        }
+
+        .nav-section-2 div:last-child {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .nav-section-2 div:first-child div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-section-3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ec4933;
+        }
+
+        .nav-section-3 span {
+            color: white;
+            background-color: #ec4933;
+            padding: 12px;
+            cursor: pointer;
+            transition: 0.5s ease;
+            position: relative;
+        }
+
+        .nav-section-3 span:hover {
+            background-color: #b7310c;
+            box-shadow: inset 0px -4px white;
+
+        }
+
+        .open-drop-menu {
+            display: none;
+            position: absolute;
+            background-color: rgb(149, 149, 149);
+            top: 3em;
+            left: 0;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .open-drop-menu a {
+            border-bottom: 2px solid white;
+            color: white;
+            text-decoration: none;
+            width: 5em;
+            padding: 5px;
+        }
+
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            padding: 2em;
+            gap: 1em;
+            padding-top: 2em;
+            background-color: rgb(215, 215, 215);
+        }
+
+        .driver-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1em;
+            list-style: none;
+        }
+
+        .driver-list li {
+            display: flex;
+            background-color: #fff;
+            margin-bottom: 1em;
+        }
+
+        .driver-list li img {
+            height: 150px;
+            width: 120px;
+            background-color: grey;
+        }
+
+        .driver-list li div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 1em;
+        }
+        .seemore{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            padding: .5em;
+        }
+
+        .top-ranker {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+        }
+
+        .top-ranker h2 {
+            text-align: left;
+        }
+
+        .top-ranker .first-emp {
+            display: flex;
+            margin-bottom: 1em;
+        }
+        .top-ranker .first-emp img{
+            height: 150px;
+            width: 120px;
+            background-color: rgb(255, 255, 255);
+        }
+        .top-ranker .first-emp div{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 1em;
+        }
+        .top-ranker .last-emp {
+            display: flex;
+            margin-bottom: 1em;
+            align-self: flex-end;
+        }
+        .top-ranker .last-emp img{
+            height: 150px;
+            width: 120px;
+            background-color: rgb(255, 255, 255);
+        }
+        .top-ranker .last-emp div{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 1em;
+        }
+        .extra{
+            background-color: #fff;
+            width: 100%;
+            height: 50vh;
+        }
+
+        footer {
+            display: flex;
+            gap: 1em;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 20vh;
+        }
+
+        footer h2 {
+            font-size: 2em;
+        }
+
+        footer ul {
+            list-style: none;
+            display: flex;
+            gap: 5em;
+
+        }
+
+        footer ul li {
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-section-1">
+            <span>भारत सरकार</span>
+            <span>GOVERNMENT OF INDIA</span>
+            <button>Skip to Dashboard</button>
+        </div>
+        <div class="nav-section-2">
+            <div>
+                <img src="./assets/emblem-dark.png" alt="">
+                <div>
+                    <span>कोयला मंत्रालय</span>
+                    <span>MINISTRY OF COAL</span>
+                </div>
+            </div>
+            <div>
+                <img src="/assets/swach-bharat.png" alt="">
+                <img src="/assets/swach-bharat.png" alt="">
+                <img src="/assets/swach-bharat.png" alt="">
+                <img src="/assets/swach-bharat.png" alt="">
+                <img src="/assets/swach-bharat.png" alt="">
+            </div>
+        </div>
+        <div class="nav-section-3">
+            <span>Home</span>
+            <span class="hover-open">Track*
+                <div class="open-drop-menu">
+                    <a href="trucks">Trucks</a>
+                    <a href="trains">Trains</a>
+                    <a href="ships">Ships</a>
+                </div>
+            </span>
+            <span class="hover-open">Administrative*
+                <div class="open-drop-menu">
+                    <a href="create">Create</a>
+                    <a href="admin">Admin</a>
+                </div>
+            </span>
+            <span>Drivers</span>
+            <span>Reports</span>
+            <span>About us</span>
+        </div>
+    </nav>
+    <div class="content-section">
+        <ul class="driver-list">
+            <li>
+                <img src="" alt="">
+                <div>
+                    <h3>Rohan Mishra</h3>
+                    <p>Truck: MH045622</p>
+                    <p>Joined: Sept. 17, 2023</p>
+                    <p>Aadhar no: MH045622</p>
+                    <p>Licence no: MH045622</p>
+                </div>
+            </li>
+        </ul>
+        <div class="seemore">See more</div>
+        <div class="top-ranker">
+            <h2>Our Best Employees</h2>
+            <div class="first-emp">
+                <img src="" alt="">
+                <div>
+                    <h2>Rohan Mishra</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quidem.</p>
+                </div>
+            </div>
+            <div class="last-emp">
+                <img src="" alt="">
+                <div>
+                    <h2>Rohan Mishra</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quidem.</p>
+                </div>
+            </div>
+            <div class="extra"></div>
+        </div>
+    </div>
+    <footer>
+        <h2>COAL INDIA</h2>
+        <ul>
+            <li>Like</li>
+            <li>Share</li>
+            <li>Suscrybe</li>
+        </ul>
+    </footer>
+    <script>
+        const onClickElements = document.querySelectorAll(".hover-open");
+        for (const onClickElement of onClickElements) {
+            const openDropMenu = onClickElement.querySelector(".open-drop-menu");
+            onClickElement.addEventListener("click", () => {
+                openDropMenu.style.display = openDropMenu.style.display === "flex" ? "none" : "flex";
+            });
+        }
+    </script>
+</body>
+
+</html>

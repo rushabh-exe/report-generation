@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .nav-section-1 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(251, 251, 251);
+            box-shadow: inset 0px 0px 1px gray;
+            padding: 8px;
+        }
+
+        .nav-section-1 button {
+            background-color: #ffffff;
+            padding: 2px;
+        }
+
+        .nav-section-2 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 8px;
+        }
+
+        .nav-section-2 div:first-child {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+        }
+
+        .nav-section-2 div:last-child {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .nav-section-2 div:first-child div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-section-3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ec4933;
+        }
+
+        .nav-section-3 span {
+            color: white;
+            background-color: #ec4933;
+            padding: 12px;
+            cursor: pointer;
+            transition: 0.5s ease;
+            position: relative;
+        }
+
+        .nav-section-3 span:hover {
+            background-color: #b7310c;
+            box-shadow: inset 0px -4px white;
+
+        }
+
+        .open-drop-menu {
+            display: none;
+            position: absolute;
+            background-color: rgb(149, 149, 149);
+            top: 3em;
+            left: 0;
+            flex-direction: column;
+            gap: 2px;
+        }
+        .open-drop-menu a{
+            border-bottom: 2px solid white;
+            color:white;
+            text-decoration: none;
+            width: 5em;
+            padding: 5px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+            gap: 1em;
+            padding-top: 2em;
+            text-align: center;
+            background-color: rgb(215, 215, 215);
+        }
+
+        .track-vehicle {
+            display: inline-flex;
+            justify-content: space-between;
+        }
+
+        .track-vehicle a {
+            line-height: 2em;
+            text-decoration: none;
+            color: black;
+            background-color: #fff;
+            padding: 4em 2em;
+        }
+
+        .track-vehicle a:hover {
+            background-color: #ec4933;
+            color: #fff;
+
+        }
+
+        .map-section {
+            display: flex;
+            flex-direction: column;
+
+            gap: 1em;
+        }
+
+        #map {
+            height: 130vh;
+            width: 100%;
+            background-color: #fff;
+        }
+
+        footer {
+            display: flex;
+            gap: 1em;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 20vh;
+        }
+
+        footer h2 {
+            font-size: 2em;
+        }
+
+        footer ul {
+            list-style: none;
+            display: flex;
+            gap: 5em;
+
+        }
+
+        footer ul li {
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-section-1">
+            <span>भारत सरकार</span>
+            <span>GOVERNMENT OF INDIA</span>
+            <button>Skip to Dashboard</button>
+        </div>
+        <div class="nav-section-2">
+            <div>
+                <img src="./assets/emblem-dark.png" alt="">
+                <div>
+                    <span>कोयला मंत्रालय</span>
+                    <span>MINISTRY OF COAL</span>
+                </div>
+            </div>
+            <div>
+                <img src="/assets/swach-bharat.png" alt="">
+                <img src="/assets/swach-bharat.png" alt="">
+                <img src="/assets/swach-bharat.png" alt="">
+                <img src="/assets/swach-bharat.png" alt="">
+                <img src="/assets/swach-bharat.png" alt="">
+            </div>
+        </div>
+        <div class="nav-section-3">
+            <span>Home</span>
+            <span class="hover-open">Track
+                <div class="open-drop-menu">
+                    <a href="trucks">Trucks</a>
+                    <a href="trains">Trains</a>
+                    <a href="ships">Ships</a>
+                </div>
+            </span>
+            <span class="hover-open">Administrative*
+                <div class="open-drop-menu">
+                    <a href="create">Create</a>
+                    <a href="admin">Admin</a>
+                </div>
+            </span>
+            <span>Drivers</span>
+            <span>Reports</span>
+            <span>About us</span>
+        </div>
+    </nav>
+    <main>
+        <div class="content-section">
+            <div class="track-vehicle">
+                <a href="trucks">
+                    <h2>Trucks</h2>
+                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                </a>
+                <a href="trians">
+                    <h2>Trains</h2>
+                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                </a>
+                <a href="ships">
+                    <h2>Ships</h2>
+                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                </a>
+            </div>
+            <div class="map-section">
+                <h2>Map:</h2>
+                <div id="map"></div>
+                <div id="map"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2>COAL INDIA</h2>
+        <ul>
+            <li>Like</li>
+            <li>Share</li>
+            <li>Suscrybe</li>
+        </ul>
+    </footer>
+    <script>
+        const onClickElements = document.querySelectorAll(".hover-open");
+        for (const onClickElement of onClickElements) {
+            const openDropMenu = onClickElement.querySelector(".open-drop-menu");
+            onClickElement.addEventListener("click", () => {
+                openDropMenu.style.display = openDropMenu.style.display === "flex" ? "none" : "flex";
+            });
+        }
+    </script>
+</body>
+
+</html>
