@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        padding: 5px;
+        background-color: orange;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: grey;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .not-reached {
+        height: 40px;
+        width: 40px;
+        background-color: rgb(163, 163, 163);
+        border-radius: 50%;
+    }
+
+    .reached {
+        height: 40px;
+        width: 40px;
+        background-color: rgb(5, 105, 155);
+        border-radius: 50%;
+    }
+
+    .checkpoints {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;
+        
+    }
+
+    .checkpoints div {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        font-size: 20px;
+    }
+    .checkpoints div p{
+        background-color: grey;
+        color: white;
+        padding: 0 50px;
+    }
+
+    .line {
+        position: absolute;
+        height: 95%;
+        margin: 5px;
+        left: 14px;
+        z-index: -1;
+        width: 2px;
+        background-color: black;
+    }
+    .map {
+        margin: 10px 0;
+        height: 50vh;
+        width: 100%;
+        background-color: grey;
+    }
+    .btnstn{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin-top: 1em;
+    }
+    .btnstn button{
+        background-color: orange;
+        padding: 1em 8em;
+        color: White;
+        font-size: 1em
+    }
+    h2{
+        text-align: left;
+        width: 100%;
+    }
+    .btnstn button:last-child{
+        background-color: red;
+    }
+</style>
+
+<body>
+    <nav>
+        <h2>Drivers Dashboard</h2>
+        <img src="" alt="">
+    </nav>
+    <main>
+        <h2>checkpoints</h2>
+        <div class="map"></div>
+        <div class="checkpoints">
+            <div class="line"></div>
+            <div>
+                <div class="reached"></div>
+                <p>Bandra</p>
+            </div>
+            <div>
+                <div class="reached"></div>
+                <p>Bandra</p>
+            </div>
+            <div>
+                <div class="not-reached"></div>
+                <p>Bandra</p>
+            </div>
+            <div>
+                <div class="not-reached"></div>
+                <p>Bandra</p>
+            </div>
+            <div>
+                <div class="not-reached"></div>
+                <p>Bandra</p>
+            </div>
+            <div>
+                <div class="not-reached"></div>
+                <p>Bandra</p>
+            </div>
+            <div>
+                <div class="not-reached"></div>
+                <p>Bandra</p>
+            </div>
+        </div>
+        <div class="btnstn">
+        <button>Nearby hault</button>
+        <button>Chat with Admin</button>
+        <button>SOS (Emergency)</button>
+        </div>
+    </main>
+</body>
+
+</html>
