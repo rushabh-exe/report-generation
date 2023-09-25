@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        padding: 5px;
+        background-color: orange;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: grey;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+    }
+
+
+    .map-container {
+        margin: 10px 0;
+        height: 50vh;
+        width: 100%;
+        background-color: grey;
+    }
+
+    main div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main div button {
+        background-color: cyan;
+        color: black;
+        font-size: 15px;
+    }
+
+    h2 {
+        text-align: left;
+        width: 100%;
+    }
+
+    main ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        list-style: none;
+        padding: 5px;
+        gap: 10px;
+    }
+
+    main ul li {
+        font-weight: 900;
+        font-size: 1.2em;
+        background-color: rgb(238, 233, 233);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: 1px solid black;
+    }
+    main ul li h4{
+        padding: 5px;
+        font-weight: 900;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    main ul li p{
+        padding: 5px;
+    }
+    main ul li button{
+        background-color: rgb(74, 196, 209);
+        color: rgb(0, 0, 0);
+        padding: 5px;
+        font-size: 1em;
+    }
+</style>
+
+<body>
+    <nav>
+        <h2>Drivers Dashboard</h2>
+        <img src="" alt="">
+    </nav>
+    <main>
+        <div>
+            <h2>Nearby Haults</h2>
+            <button>Continue Journey</button>
+        </div>
+        <div class="map-container"></div>
+        <ul>
+            <li>
+                <h4>Hotel Somaiya</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam error sint magnam vitae repellat nobis
+                    autem cum expedita, harum tenetur sit explicabo asperiores unde natus animi provident sequi quaerat
+                    quod.
+                </p>
+                <button>Take Hault Here</button>
+            </li>
+            <li>
+                <h4>Hotel Somaiya</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam error sint magnam vitae repellat nobis
+                    autem cum expedita, harum tenetur sit explicabo asperiores unde natus animi provident sequi quaerat
+                    quod.
+                </p>
+                <button>Take Hault Here</button>
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>
